@@ -25,6 +25,7 @@
     background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
+    font-weight: bold;
   }
   
   .overlay-content {
@@ -79,11 +80,14 @@
     font-weight: bold;
     }
   
-  @media screen and (max-height: 450px) {
+  @media (min-width: 600px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
+    }
+    .mobile-menu {
+        display: none;
     }
   }
