@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@400;700&display=swap');
+
+:root {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-mobile {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.7rem;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    display: flex;
+    position: relative;
+    top: 25%;
+   flex-direction: column;
+   gap: 4rem;
+   list-style: none;
+   align-items: center;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 26px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover,.mobile-menu:hover {
+    color: blueviolet;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  .logo {
+    font-size: 1.7rem;
+    color: #2d2e32;
+    cursor: pointer;
+  }
+  
+
+  .mobile-menu {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  
+
+  }
+
+  h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-weight: bold;
+    }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
