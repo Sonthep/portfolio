@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@400;700&display=swap');
-
+@import url(img/hero.webp);
 :root {
-    width: 100%;
-    margin: 0 auto;
+    margin: 0 ;
     padding: 0;
+    box-sizing: border-box;
     background-color: #ffffff;
     font-family: 'Mulish', sans-serif;
     font-family: 'Poppins', sans-serif;
@@ -79,7 +79,131 @@
     margin-block-end: 1em;
     font-weight: bold;
     }
+
+  .hero-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
+
+
+  @keyframes morph {
+    
+
+    0% {
+      transform: scale(1));
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1));
+    }
+  }
+
+  .hero-img img {
+    border-top-left-radius: 60%;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 30% 70%;
+    border-bottom-left-radius: 70% 40%;
+    height: 20rem;
+    position: relative;
+    width: 20rem;
+    background-image: url(img/hero.webp);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #2d2e32;
+    animation: morph 8s ease-in-out infinite;
+    
+  }
+
+  .hero-text span :hover{
+    cursor: pointer;
+    color: blueviolet;
+  }
+
+  .hero-text{
+    text-align: center;
+  }
+
+
+  .hero-text h1 {
+    color: #2d2e32;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .hero-text span{
+    display: flex;
+    gap: 1.3rem;
+    margin: 2.5rem 0;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: 0px;
+    justify-content: center;
+  }
+
+  .hero-text span a {
+    color: #2d2e32;
+    font-size: 3rem;
+  }
+
+  .tech-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    font-size: 1.7rem;
+    gap: 2rem;
+  }
+
+  .tech-stack p {
+    font-size: 1.7rem;
+    color: #2d2e32;
+    border-bottom: 2px solid #7a7c84;
+  }
+
+
+  .logos ul  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    cursor: pointer;
+    gap: 3rem;
+}
+
+  .logos img{
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .logos ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid none #000;
+    box-shadow: 0 0 10px ;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+
+  }
+
+
+
+  
+
   @media (min-width: 600px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
